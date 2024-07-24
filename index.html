@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/Logo.png">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <a href="#" rel="">
+            <img src="./images/Logo.png" alt="Logo Alura" class="logo">
+        </a>
+    </header>
+
+    <main>
+        <section class="encriptador">
+            <textarea class="encriptar" placeholder="Inserte el texto aquí"></textarea>
+            <div class="encriptador__aviso">
+                <img src="./images/bi_exclamation-circle-fill.png" alt="Img aviso">
+                <p class="texto__aviso">Solo letras minusculas y sin acentos </p>
+            </div>
+            <div class="encriptador__contenedor">
+                <button type="submit" class="btn__encriptar">Encriptar</button>
+                <button type="submit" class="btn__desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="tarjeta">
+            <div class="tarjeta__contenedor">
+                <img src="./images/Muñeco.png" alt="Imagen muñeco con lupa" class="img__muñeco">
+                <p class="texto__uno">Ningún mensaje fue encontrado</p>
+                <p class="texto__dos">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" class="btn__copiar">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__social">
+            <a href="https://github.com/VanesssaJND" target="_blank" class="github"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vanessa-najera-44b179bb/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="footer__author">
+            <p>&copy; copyright 2024. Desarrollado por Vanessa Najera</p>
+        </div>
+    </footer>
+    <script type="module" src="./js/encriptador.js"></script>
+</body>
+</html>
