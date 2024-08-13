@@ -85,6 +85,7 @@ btnEncriptar.addEventListener("click", async e=>{
     contenido.remove();
     }
 });
+
 //desencriptar 
 
 btnDesencriptar.addEventListener('click', async e => {
@@ -125,9 +126,17 @@ btnDesencriptar.addEventListener('click', async e => {
     }
     else{
         respuesta.innerHTML = decrypt(texto);
-        btnCopiar.style.visibility = "inherit";
+        btnCopiar.style.visibility = "inherit"; 
         contenido.remove();
     }
+
+});
+
+btnCopiar.addEventListener('click', e => {
+    e.preventDefault();
+    let copiar = respuesta;
+    copiar.select();
+    document.execCommand('copy');
 
 });
 
